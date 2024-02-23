@@ -156,7 +156,7 @@ const errorHandler = (error, req, res, next) => {
     error.message === "deleting person failed" ||
     error.message === "query failed"
   ) {
-    return res.status(500).send({ error: error.message });
+    return res.status(500).json({ error: error.message });
   }
 
   next(error);
