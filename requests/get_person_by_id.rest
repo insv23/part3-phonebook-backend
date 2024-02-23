@@ -1,0 +1,8 @@
+### Normal
+GET http://localhost:3001/api/persons/65d75e56b44176185cc263dd
+
+### Wrong id (404)
+GET http://localhost:3001/api/persons/613f3e3e3e3e3e3e3e3e3e3e
+
+### Illegal id (400)
+GET http://localhost:3001/api/persons/1

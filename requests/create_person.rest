@@ -1,0 +1,42 @@
+### Noromal
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Schumm, Corwin and Hickle",
+    "number": "683-420-6326"
+}
+
+### Repeat name
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+   "name": "Schumm, Corwin and Hickle",
+   "number": "683-420-6326"
+}
+
+### Missing number
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "Spinka, Bartoletti and Bayer"
+}
+
+### Missing name
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "number": "(460) 406-1045 x0313"
+}
+
+### Name is less than 3 characters
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name": "an",
+    "number": "683-420-6326"
+}
